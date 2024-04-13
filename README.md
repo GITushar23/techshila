@@ -1,54 +1,49 @@
-To create a README.md file for your code, you can provide a brief description of what the code does, how to use it, and any relevant information for users. Here's a template you can use:
 
----
+```markdown
+# Notebook: Techshila
 
-# Voice-Based Interview Question Generator
+This notebook automates various tasks using pre-trained models from the Hugging Face Transformers library and other related packages.
 
-This repository contains code for a voice-based interview question generator. The system uses state-of-the-art natural language processing and speech recognition models to interact with users and generate interview questions dynamically based on their responses.
+## Installation
 
-## Features
-
-- Generates interview questions based on candidate responses.
-- Utilizes speech-to-text and text-to-speech models for voice interaction.
-- Uses a large language model (LLM) to generate context-aware interview questions.
-- Supports customizable prompts for different job positions.
-
-## How to Use
-
-1. Clone the repository to your local machine:
+To run this notebook, you need to install the required dependencies. You can do this by running the following commands in your terminal or command prompt:
 
 ```bash
-git clone https://github.com/your_username/voice-based-interview-question-generator.git
+pip install --upgrade pip
+pip install git+https://github.com/huggingface/transformers.git accelerate datasets[audio]
+pip install flash-attn gradio git+https://github.com/suno-ai/bark.git peft accelerate bitsandbytes safetensors sentencepiece ffmpeg-python
 ```
 
-2. Install the required dependencies:
+Additionally, you need to have GPU support for optimal performance, as some tasks involve deep learning models.
 
-```bash
-pip install -r requirements.txt
+## Usage
+
+1. Open the notebook in a Jupyter environment.
+2. Ensure you have access to a GPU if you want to leverage its power.
+3. Run each cell sequentially to execute the code.
+4. Follow the instructions provided in the notebook for each task.
+
+## Tasks Covered
+
+1. Speech-to-Text Conversion
+2. Text-to-Speech Synthesis
+3. Generating Interview Questions
+
+## Directory Structure
+
+- `saved_models/`: Directory for saving trained models.
+    - `text_to_speech/`: Saved text-to-speech model.
+    - `speech_to_text/`: Saved speech-to-text model.
+    - `mistral/`: Saved Mistral model.
+
+## Additional Notes
+
+- The notebook utilizes various Hugging Face models and libraries for different tasks.
+- Ensure you have sufficient disk space available, especially if you're saving models.
+- For optimal performance, consider running the notebook on a machine with GPU support.
+
+Feel free to modify the notebook as needed for your specific use case or extend its functionality.
+
 ```
 
-3. Run the main script:
-
-```bash
-python main.py
-```
-
-4. Follow the prompts to interact with the system and generate interview questions.
-
-## Dependencies
-
-- Python 3.x
-- Transformers
-- PyTorch
-- Gradio
-- ffmpeg-python
-- Other dependencies listed in requirements.txt
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize the README according to your project's specifics and include any additional information or instructions you find relevant.
+You can copy this Markdown code and save it as `README.md` in your repository alongside the notebook file.
