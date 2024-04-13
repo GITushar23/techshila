@@ -45,5 +45,3 @@ Additionally, you need to have GPU support for optimal performance, as some task
 Feel free to modify the notebook as needed for your specific use case or extend its functionality.
 
 ```
-
-You can copy this Markdown code and save it as `README.md` in your repository alongside the notebook file.
