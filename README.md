@@ -29,12 +29,7 @@ Additionally, you need to have GPU support for optimal performance, as some task
 2. Text-to-Speech Synthesis
 3. Generating Interview Questions
 
-## Directory Structure
 
-- `saved_models/`: Directory for saving trained models.
-    - `text_to_speech/`: Saved text-to-speech model.
-    - `speech_to_text/`: Saved speech-to-text model.
-    - `mistral/`: Saved Mistral model.
 
 ## Additional Notes
 
