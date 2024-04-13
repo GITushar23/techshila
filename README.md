@@ -43,5 +43,3 @@ Additionally, you need to have GPU support for optimal performance, as some task
 - For optimal performance, consider running the notebook on a machine with GPU support.
 
 Feel free to modify the notebook as needed for your specific use case or extend its functionality.
-
-```
